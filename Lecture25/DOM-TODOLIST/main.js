@@ -51,6 +51,71 @@ document.onload = applyTheme()
 
 
 
+// drag and drop
+
+const listItems = document.querySelectorAll("#items .list-group-item");
+
+let dragSrcElement = null;
+
+function dragStart(e){
+
+    dragSrcElement = this
+
+    e.dataTransfer.effectAllowed = "move";
+    e.dataTransfer.setData("text/html", this.textContent)
+}
+
+function dragEnter(){
+
+    // console.log("dragEnter")
+}
+
+function dragOver(e){
+
+    e.preventDefault();
+
+    e.dataTransfer.dropEffect = "move";
+    // console.log("dragOver")
+
+}
+
+function dragLeave(){
+
+    // console.log("dragLeave")
+}
+
+
+function handleDrop(e){
+
+    if(dragSrcElement !== this){
+
+        dragSrcElement.textContent = this.textContent;
+
+        this.textContent = e.dataTransfer.getData("text/html");
+    }
+
+
+    // console.log("drop")
+}
+
+listItems.forEach((item)=>{
+
+    item.addEventListener("dragstart", dragStart)
+
+    item.addEventListener("dragenter", dragEnter)
+
+    item.addEventListener("dragover", dragOver)
+
+    item.addEventListener("dragleave", dragLeave)
+
+    item.addEventListener("drop", handleDrop)
+
+})
+
+
+
+
+
 
 
 
