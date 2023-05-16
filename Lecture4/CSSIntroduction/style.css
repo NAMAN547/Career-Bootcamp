@@ -1,0 +1,55 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+
+
+
+
+
+figure{
+
+    background-color: rgb(228, 228, 30);
+    margin: 20px;
+    padding: 30px;
+    width: fit-content;
+    border: 2px solid black;
+    font-size: 24px;
+
+}
+
+
+#figure-button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+
+}
+
+
+.container{
+
+    background-color: rgb(224, 172, 135);
+    border: 2px dotted black;
+
+}
+
+
+input[id="text"]{
+
+    background-color: yellow;
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+   
+
+}
+
+
+body{
+
+    position: relative;
+}
+
+
+
+header{
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 75px ;
+    background: #FFC017  ;
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 1000;
+}
+.logo{
+
+    width: 200px;
+
+}
+
+nav > a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.hero{
+
+    width: 100%;
+    background: #FFC017  ;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 75px;
+    
+}
+
+.hero_info{
+
+    width: 50%;
+margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+
+
+}
+
+.hero_info > h1{
+
+    font-size: 106px;
+    align-self: center;
+}
+
+.hero_info > p{
+
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.hero_info > button{
+
+
+    width: fit-content;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.hero_img{
+
+
+margin-right: 5px;
+    width: 50%;
+    height: 455px;
+    background-image: url("https://cdn-images-1.medium.com/max/2400/1*P81ck71Q_5PJGkKr3YP_2w.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+
+   
+}
+
+.hero_news{
+
+    width: 100%;
+
+   margin-top: 100px;
+  top: 530px;
+
+  height:350px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  
+  align-items: center;
+
+    position: absolute;
+
+}
+
+.hero_grid{
+
+    display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 30px;
+
+
+
+}
+
+.grid_column{
+
+    font-size: 24px;
+
+}
+
+main{
+
+ width: 100%;
+    border-top: 1px solid black;
+    position: absolute;
+    top: 880px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 0.6fr ;
+    overflow: visible;
+   
+   
+}
+
+
+
+aside{
+
+
+    margin-top: 100px;
+    display: flex;
+    /* position: absolute;
+    top: 200px;
+    right: 20px; */
+    /* border: 2px solid black; */
+    flex-direction: column;
+    /* position: sticky ;
+    top: 107px; */
+   
+
+
+
+}
+
+aside > div{
+
+    position: sticky;
+    top: 100px;
+
+
+
+}
+
+.sidebar_buttons > button{
+
+    background-color: lightgray;
+    color: black;
+    border: 0;
+   margin: 10px;
+}

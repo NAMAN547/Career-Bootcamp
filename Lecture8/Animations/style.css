@@ -1,0 +1,65 @@
+
+
+section{
+
+    width: 40vw;
+    height: 60vh;
+    border: 1px solid black;
+    background-color: cadetblue;
+    margin: 100px auto;
+    animation-name: slider;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+
+    animation-timing-function: cubic-bezier(0.03, 0.61, 0.33, 1.51);
+   
+
+}
+
+
+@keyframes slider{
+
+    0%{
+
+       
+
+
+    }
+
+    30%{
+
+        width: 100vw;
+        background-color: brown;
+
+    }
+
+    50%{
+
+        height: 100px;
+    }
+
+    70%{
+
+        height: 500px;
+        translate: 100px;
+    
+    }
+
+
+    100%{
+
+        width: 60vw;
+        background-color: black;
+
+    }
+
+
+
+
+
+
+}

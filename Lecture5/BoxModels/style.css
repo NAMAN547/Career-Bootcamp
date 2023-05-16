@@ -1,0 +1,35 @@
+
+
+h1{
+
+    height: 200px;
+    width: 200px;
+    border: 2px dotted rgb(220, 45, 45);
+
+    margin: 100px auto;
+    padding: 20px;
+
+}
+
+span{
+
+    width: 100px;
+    border: 2px solid black;
+    background-color: rgb(197, 55, 83);
+    font-size: 48px;
+    color: white;
+    margin: 100px;
+    padding: 20px;
+    display: block;
+}
+
+div{
+
+    width: 200px;
+    border: 2px solid black;
+    height: 150px;
+    margin: 100px;
+    background-color: cyan;
+    display: inline-block;
+    padding: 20px;
+}

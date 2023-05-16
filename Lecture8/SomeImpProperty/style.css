@@ -1,0 +1,29 @@
+
+
+div{
+
+    width: 80vw;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+    border: 1px solid lightgray;
+    background-color: rgb(156, 175, 185);
+    color: white;
+    margin: 100px auto;
+    background-blend-mode: multiply;
+    background-image: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+section{
+
+    width: 400px;
+    min-height: 200px;
+    
+  
+    border: 2px solid black;
+    background-color: blanchedalmond;
+}

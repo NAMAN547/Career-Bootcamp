@@ -1,0 +1,41 @@
+
+
+section{
+
+    width: 90vw;
+    height: 80vh;
+    border: 5px solid black;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+     align-items: stretch;   */
+     /* gap: 20px; */
+}
+
+section > div{
+
+    width: 350px;
+    height: 200px;
+   
+    border: 2px solid white;
+    background-color: steelblue;
+   color: aqua;
+   font-size: 36px;
+
+   flex-grow: 1;
+
+   /* flex-shrink: 1; */
+}
+
+
+
+div:nth-of-type(3){
+
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+    /* align-self: center; */
+    flex-basis: 800px;
+    
+}

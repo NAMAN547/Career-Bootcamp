@@ -1,0 +1,46 @@
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+
+    width: 100vw;
+    min-height:15vh;
+    background-color: azure;  
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container > a {
+
+    text-decoration: none;
+    color: black;
+}
+
+a:last-child{
+
+    position: absolute;
+    right: 50px;
+}
+
+@media all and (max-width:863px){
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    a:last-child{
+
+        position: static;
+    }
+}
+

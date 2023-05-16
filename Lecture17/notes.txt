@@ -1,0 +1,8 @@
+
+
+1 => how to target an element
+
+2=> how to traverse a document
+
+3=> 
+
