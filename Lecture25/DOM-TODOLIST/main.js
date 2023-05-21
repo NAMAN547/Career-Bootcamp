@@ -70,6 +70,7 @@ function dragEnter(){
     // console.log("dragEnter")
 }
 
+
 function dragOver(e){
 
     e.preventDefault();
@@ -87,7 +88,7 @@ function dragLeave(){
 
 function handleDrop(e){
 
-    if(dragSrcElement !== this){
+        if(dragSrcElement !== this){
 
         dragSrcElement.textContent = this.textContent;
 
