@@ -1,0 +1,16 @@
+<%- include("./partials/header") %>
+
+    <h1> My Todos</h1>
+
+    <ul>
+
+   <% for(let todo of todos){ %>
+
+        <li>  <%=todo %> <input type="checkbox" checked> </li>
+    
+    <%} %>
+
+    </ul>
+
+
+    <%- include("./partials/footer") %>

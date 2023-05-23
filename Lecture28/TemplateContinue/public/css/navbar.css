@@ -1,0 +1,17 @@
+
+
+ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: brown;
+    height: 100px;
+
+}
+
+ul > li{
+
+    color: white;
+}
