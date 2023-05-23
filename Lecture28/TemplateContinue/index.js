@@ -3,41 +3,25 @@ const app = express();
 const PORT = 8000;
 const path = require("path")
 
-const todos = [
-
-    "Avatar",
-    "Avengers",
-    "KGF",
-    "Shawshank Redemption",
-    "John Wick"
-]
-
-
 
 app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"));
-app.use(express.static(path.join(__dirname, "public")))
+app.use(express.static(path.join(__dirname, "public")));
 
 
-app.get("/", (req,res)=>{
+app.get("/",(req,res)=>{
 
-    let randomNumber = Math.floor(Math.random()*10);
-
-    res.render("index", {randomNumber})
+    res.render("index")
 })
 
-app.get("/todos",(req,res)=>{
 
-    res.render("todos", {todos})
+app.get("/userdetail", (req,res)=>{
 
+    console.log(req.query)
+
+    res.send("get request completed");
 
 })
-
-app.get("/blog",(req,res)=>{
-
-    res.render("blog")
-})
-
 
 
 
