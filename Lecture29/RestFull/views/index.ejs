@@ -19,6 +19,9 @@
                 <strong><%= comment.user %></strong> : <%= comment.text %>
                 <a href="/comments/<%= comment.id %>"> Show</a>
                 <a href="/comments/<%= comment.id %>/edit"> Edit</a>
+                <form action="/comments/<%= comment.id %>?_method=DELETE" method="post">
+                    <button> Delete</button>
+                </form>
 
             </li>
 

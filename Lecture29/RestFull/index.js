@@ -11,7 +11,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
 
-const comments = [
+let comments = [
 
     {   id: uuid(),
         user: "kartik" ,
@@ -95,10 +95,16 @@ app.patch("/comments/:commentid", (req,res)=>{
 
 })
 
+// delete a comment 
 
+app.delete("/comments/:commentid", (req,res)=>{
 
+    const {commentid} = req.params;
 
+    comments = comments.filter((comment)=> comment.id !== commentid);
 
+    res.redirect("/comments");
 
+})
 
 app.listen(port, () => console.log(`Server listening at http://localhost:3000`))
