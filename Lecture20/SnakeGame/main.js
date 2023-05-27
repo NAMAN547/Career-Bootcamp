@@ -10,17 +10,13 @@ const canvas = document.getElementById("canvas");
 
  console.log(pen)
  
-
-
-
 class Snake{
 
     constructor(){
 
         this.init_len = 5;
         this.direction="right";
-        this.cells = [];
-       
+        this.cells = [];   
     }
 
     creatSnake(){
@@ -37,8 +33,6 @@ class Snake{
 
     drawSnake(){
 
-
-
         for(let i = 0; i < this.cells.length; i++){
 
             const cell = this.cells[i];
@@ -47,7 +41,7 @@ class Snake{
 
                 pen.fillStyle = "yellow"
             }else{
-
+ 
                 pen.fillStyle = "red"
             }
 
@@ -258,8 +252,6 @@ function randomFood(){
     return food;
  
 }
-
-
 
 
 init()
