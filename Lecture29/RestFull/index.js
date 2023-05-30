@@ -88,6 +88,7 @@ app.patch("/comments/:commentid", (req,res)=>{
     const comment = comments.find((comment)=> comment.id === commentid);
 
     console.log(req.body);
+    
      comment.user = req.body.user;
     comment.text =  req.body.text;
 
