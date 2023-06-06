@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-
-
 const movieSchema = new mongoose.Schema({
 
     name : {
@@ -29,4 +27,4 @@ const movieSchema = new mongoose.Schema({
 
 const Movie = mongoose.Model("Movie", movieSchema);
 
-export default Movie;
+module.exports = Movie
