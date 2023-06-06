@@ -1,0 +1,48 @@
+<% layout('layout/boilerplate') -%>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="col-lg-4">
+            <div class="card mx-auto mb-3" style="width: 23rem;">
+                <img src="<%=product.img%>" class="card-img-top" alt="<%=product.name%> ">
+                <div class="card-body">
+                  <h5 class="card-title"><%=product.name%> </h5>
+                  <p class="card-text"><%=product.desc%></p>
+                  <h5 class="card-title">$<%=product.price%> </h5>
+                  <a href="/products/<%=product._id%>/edit" class="btn btn-sm btn-secondary">Edit</a>
+                 <form action="/products/<%=product._id%>?_method=DELETE" method="post" class="d-inline">
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                 </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width:50%;" >
+        <h1>Add a Review</h1>
+        <div class="mb-3">
+            <form action="/products/<%= product._id %>/review" method="post">
+                <div class="mb-3">
+                   <label for="rating" class="form-label">Rating</label>
+                    <input type="range" name="rating" id="rating" class="form-control" min="0" max="5" step="1">
+                </div>
+                <div class="mb-3">
+                  <label for="rating" class="form-label">Comment</label>
+                    <textarea class="form-control" name="comment" id="commment" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-sm btn-success">Add a review </button>
+            </form>
+
+            <div class="mb-3">
+
+               <% for(let review of product.reviews){ %>
+
+                    <div class="card mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title"> Rating : <%= review.rating %></h5>
+                          <p class="card-text"> Comment : <%= review.comment %></p>                        
+                        </div>
+                      </div>
+               <% } %>
+
+            </div>
+
+</div>
