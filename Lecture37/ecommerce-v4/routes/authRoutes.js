@@ -32,7 +32,7 @@ router.post("/register", async(req,res)=>{
 
     const newUser = await User.register(user, password);
 
-    req.flash("success", " User registered Successfully!")
+    req.flash("success", `${username.toUpperCase()}, registered Successfully!`)
 
     res.redirect("/login")
 })
@@ -55,7 +55,7 @@ router.post("/login",
     function(req,res){
 
 
-        req.flash("success", `welcome back  ${req.user.username}`);
+        req.flash("success", `Welcome back, ${req.user.username.toUpperCase()}!`);
 
         res.redirect("/products")
     }
@@ -68,7 +68,7 @@ router.get("/logout", (req,res)=>{
 
         if(err) {return next(err)};
 
-        req.flash("success", "Goodbye see you again!");
+        req.flash("success", "Goodbye, see you again!");
         res.redirect("/login")
     })
 })

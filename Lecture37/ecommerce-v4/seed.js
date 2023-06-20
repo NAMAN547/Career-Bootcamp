@@ -50,6 +50,12 @@ const products = [
         price: 350,
         desc: "The iPhone is a line of smartphones designed and marketed by Apple Inc."
     },
+    {
+        name: 'Book',
+        img: 'https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ym9va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        price: 550,
+        desc: "The iPhone is a line of smartphones designed and marketed by Apple Inc."
+    }
 
 ]
 

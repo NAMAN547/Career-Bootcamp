@@ -16,7 +16,9 @@ router.post("/products/:productid/review",isLoggedIn,  async(req,res)=>{
 
       product.reviews.push(review);
 
-      await product.save()
+      await product.save();
+
+      req.flash("success", " review added!")
 
      res.redirect(`/products/${productid}`)
 })

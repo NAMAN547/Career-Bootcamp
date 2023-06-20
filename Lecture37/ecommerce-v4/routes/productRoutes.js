@@ -71,27 +71,21 @@ router.patch("/:productid",isLoggedIn, async(req,res)=>{
 
      await Product.findByIdAndUpdate(productid, {name, price, img, desc});
 
-     req.flash("success", " product updated successfully!")
+     req.flash("success", " Product updated successfully!")
 
      res.redirect(`/products/${productid}`)
 })
 
 
-router.delete("/:productid",isLoggedIn, (req,res)=>{
+router.delete("/:productid",isLoggedIn, async(req,res)=>{
 
      const {productid} = req.params;
 
-    Product.findByIdAndDelete(productid).then(()=>{
+    await Product.findByIdAndDelete(productid);
 
-        console.log("product deleted")
-    }).catch((err)=>{
-
-        console.log(err)
-    })
+    req.flash("error", " One Product has been deleted!")
      
-
      res.redirect("/products")
-
 
 })
 
