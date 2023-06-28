@@ -1,0 +1,4 @@
+1.add cryptographic algo for message encrytion (end-to-end);
+2.database(mongo) for persistant login
+3. enter and leave rooms
+4. user started typing 
